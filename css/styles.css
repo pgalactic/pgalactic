@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fc5d66;
+  --secondary-color: #ffcc00;
+  --light-color: #f9fafb;
+  --dark-color: #272d35;
+  --content-title: 1.6rem;
+  --content-paragraph: 1.5rem;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: url(../images/tie-dye-bg.jpg) center/cover no-repeat fixed;
+}
+
+header img {
+  max-width: 100%;
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: var(--content-title);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: var(--content-paragraph);
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utility */
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 2.6rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 32px;
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.container {
+  overflow-x: hidden;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 3rem 3rem;
+}
+
+.btn:hover {
+  background: var(--dark-color);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Header */
+.logo {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Section: Hero */
+.welcome {
+  background-color: white;
+  color: black;
+}
+
+.welcome .welcome-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.welcome-image-wide {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.welcome .welcome-content {
+  max-width: 55%;
+}
+
+/* Section: Upcoming Shows */
+.shows {
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+
+.shows .shows-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.shows .shows-content {
+  max-width: 50%;
+}
+/* Section: Recordings */
+
+/* Section: Videos */
+
+/* Section: Past Shows */
+
+/* Footer */
+
+/* Ad: Landing Page */
