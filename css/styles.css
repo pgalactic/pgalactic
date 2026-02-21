@@ -7,8 +7,9 @@
 :root {
   --primary-color: #fc5d66;
   --secondary-color: #ffcc00;
-  --light-color: #f9fafb;
+  --light-color: #eeeeee;
   --dark-color: #272d35;
+  --content-header: 1.8rem;
   --content-title: 1.6rem;
   --content-paragraph: 1.5rem;
 }
@@ -27,6 +28,12 @@ header img {
 }
 
 h2 {
+  font-size: var(--content-header);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h3 {
   font-size: var(--content-title);
   margin-bottom: 20px;
 }
@@ -42,29 +49,23 @@ ul {
 
 img {
   max-width: 100%;
+  border-radius: 20px;
 }
 
 /* Utility */
 
 .btn {
   display: inline-block;
-  padding: 1.6rem 2.6rem;
+  padding: 1.2rem 1.4rem;
   border: 1px solid var(--secondary-color);
   border-radius: 32px;
-  background: var(--secondary-color);
+  background: var(--light-color);
   color: var(--dark-color);
   cursor: pointer;
   transition: all 0.2s;
   text-decoration: none;
   margin-right: 10px;
-}
-
-.container {
-  overflow-x: hidden;
-  position: relative;
-  border-radius: 30px;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-  padding: 3rem 3rem;
+  font-size: 1.1rem;
 }
 
 .btn:hover {
@@ -73,10 +74,20 @@ img {
   border-color: #fff;
 }
 
+.container {
+  overflow-x: hidden;
+  position: relative;
+  border-radius: 32px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 3rem 3rem;
+  margin-bottom: 2rem;
+}
+
 /* Header */
 .logo {
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .page {
@@ -111,7 +122,6 @@ img {
 .shows {
   background-color: black;
   color: white;
-  margin-top: 30px;
 }
 
 .shows .shows-flex {
@@ -126,6 +136,37 @@ img {
   max-width: 50%;
 }
 /* Section: Recordings */
+.recordings {
+  background-color: black;
+  color: white;
+}
+
+.recordings .recordings-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+.recordings .recordings-item-content {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.recordings .recordings-item-content a {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.recordings .recordings-item-content a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
 
 /* Section: Videos */
 
