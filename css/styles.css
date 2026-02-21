@@ -47,6 +47,18 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #eb9a49;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #51404f;
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   border-radius: 20px;
@@ -93,6 +105,15 @@ img {
 .page {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.separator {
+  bottom: -4px;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+
+  width: 100%;
 }
 
 /* Section: Hero */
@@ -157,21 +178,85 @@ img {
 .recordings .recordings-item-content a {
   display: inline-block;
   font-size: 1.1rem;
-  color: #fff;
-  text-decoration: none;
   margin-right: 2rem;
   margin-bottom: 0.8rem;
 }
 
-.recordings .recordings-item-content a:hover {
-  color: #ccc;
-  text-decoration: underline;
+/* Section: Videos */
+.videos {
+  background-color: black;
+  color: white;
 }
 
-/* Section: Videos */
+.videos .videos-item-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 30px;
+}
+
+.videos .videos-item-container .videos-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* Section: Past Shows */
+.past-shows {
+  background-color: black;
+  color: white;
+}
+
+.past-shows .past-shows-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.past-shows .past-shows-grid img {
+  max-width: 260px;
+}
+
+.past-shows .past-shows-grid p {
+  font-size: 1.1rem;
+}
+/* Contact Form */
+.contact {
+  background-color: black;
+  color: white;
+}
 
 /* Footer */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.footer .footer-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.footer .footer-content h3 {
+  font-size: 1.8rem;
+}
+
+.footer .footer-content h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.footer .footer-content a {
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  margin-bottom: 0.8rem;
+}
 
 /* Ad: Landing Page */
