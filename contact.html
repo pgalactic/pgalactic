@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+      Parker Galactic - Cosmic American Folk-Rock in the Pacific Northwest
+    </title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header" role="banner">
+        <a href="/"
+          ><img
+            src="images/parker-galactic-bluebird-logo.png"
+            alt="Parker Galactic logo"
+            class="logo"
+        /></a>
+      </header>
+      <!-- Section: Welcome -->
+      <section class="welcome container">
+        <div class="welcome-flex">
+          <div class="welcome-content">
+            <h3>Contact Us</h3>
+            <div class="contact-form">
+              <form action="send_mail.php" method="post">
+                <label for="contact_name">Your Name</label>
+                <input
+                  type="text"
+                  name="Your Name"
+                  id="contact_name"
+                  placeholder="Enter your first and last name."
+                />
+                <label for="contact_email">Email Address</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="contact_email"
+                  placeholder="Enter your email address."
+                />
+                <label for="contact_message">Message</label>
+                <textarea
+                  name="Message"
+                  id="contact_message"
+                  placeholder="Enter your message here."
+                ></textarea>
+                <span class="contact-form-checkbox">
+                  <input
+                    type="checkbox"
+                    name="join"
+                    id="contact_mailing_list"
+                  />
+                  <label for="contact_mailing_list">Join our email list</label>
+                </span>
+                <button type="submit" class="btn btn-light">
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div class="contact-social">
+              <span class="contact-social-item">
+                <a class="links" href="https://facebook.com/parkergalacticmusic"
+                  ><i class="fa-brands fa-xl fa-facebook"></i> Facebook</a
+                >
+              </span>
+              <span class="contact-social-item">
+                <a class="links" href="https://instagram.com/parkergalactic"
+                  ><i class="fa-brands fa-xl fa-instagram"></i> Instagram</a
+                >
+              </span>
+            </div>
+          </div>
+          <div class="welcome-image">
+            <img
+              src="images/parker-galactic-band-photo-01.jpg"
+              alt="Parker Galactic band photo"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Parker Galactic. Made in Eugene, Oregon, USA</p>
+        <p>
+          <a
+            class="links"
+            href="https://open.spotify.com/artist/321HrxfNKqJhq4dWP4tch5?si=XFOZT93QQ5Ob6HkRm2Tk7Q"
+          >
+            <i class="fa-brands fa-spotify"></i> Spotify</a
+          >
+          <a class="links" href="https://www.youtube.com/@parkergalactic"
+            ><i class="fa-brands fa-youtube"></i> YouTube</a
+          >
+          <a
+            class="links"
+            href="https://music.apple.com/gb/artist/parker-galactic/1678679759"
+            ><i class="fa-brands fa-apple"></i> Apple Music</a
+          >
+          <a
+            class="links"
+            href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
+            ><i class="fa-brands fa-amazon"></i> Amazon Music</a
+          >
+          <a class="links" href="https://soundcloud.com/parkergalactic"
+            ><i class="fa-brands fa-soundcloud"></i> SoundCloud</a
+          >
+          <a class="links" href="https://parkergalactic.bandcamp.com/"
+            ><i class="fa-brands fa-bandcamp"></i> BandCamp</a
+          >
+          <a class="links" href="/" class="btn"
+            ><i class="fa-regular fa-xl fa-home"></i> Home</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
