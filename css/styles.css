@@ -1,4 +1,6 @@
-large* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,12 +9,7 @@ large* {
 :root {
   --border-color: #444444;
   --border-radius: 32px;
-  --button-dark-bg-color: #eeeeee;
-  --button-dark-text-color: #272d35;
-  --button-dark-border-color: #333333;
-  --button-light-bg-color: #eeeeee;
-  --button-light-text-color: #272d35;
-  --button-light-border-color: #ffffff;
+  --border-radius-small: 16px;
   --content-header: 1.8rem;
   --content-paragraph: 1.5rem;
   --content-small: 1.1rem;
@@ -20,11 +17,10 @@ large* {
   --content-large: 1.6rem;
   --hover-bg-color: #51404f;
   --hover-text-color: #ffffff;
-  --link-light-color: #ff9100;
+  --link-light-color: #ff9900;
   --link-light-hover-color: #ffffff;
-  --link-dark-color: #0059ff;
-  --link-dark-hover-color: #333333;
   --margin-bottom: 2rem;
+  --margin-bottom-small: 1rem;
 }
 
 html,
@@ -33,7 +29,7 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
   background: url("../images/parker-galactic-pacific-wonderland-ep-album-cover.png")
-    center/cover no-repeat fixed;
+    no-repeat center/cover fixed;
 }
 
 header img {
@@ -72,49 +68,37 @@ a:hover {
   text-decoration: underline;
 }
 
+i {
+  padding-right: 5px;
+}
+
 img {
   max-width: 100%;
   border-radius: var(--border-radius);
 }
 
 /* Utility */
-
-.btn {
-  display: inline-block;
-  padding: 1.2rem 1.4rem;
-  border: 1px solid #ffffff;
-  border-radius: var(--border-radius);
-  background: #000000;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: var(--content-small);
-}
-
-.btn:hover {
-  background: #333333;
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
 .container {
   overflow-x: hidden;
   position: relative;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
-  padding: 3rem 3rem;
+  padding: 3rem;
+  margin-bottom: var(--margin-bottom);
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
   margin-bottom: var(--margin-bottom);
 }
 
 .links {
-  display: inline-block;
   font-size: var(--content-small);
   border-radius: var(--border-radius);
-  padding: 0.5rem 0.7rem;
   margin-right: 2rem;
-  margin-bottom: 0.8rem;
 }
 
 /* Header */
@@ -127,6 +111,11 @@ img {
 .page {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.page-narrow {
+  max-width: 600px;
+  margin: 32px auto 0;
 }
 
 .separator {
@@ -145,95 +134,100 @@ img {
 
 .welcome .welcome-flex {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 6rem;
 }
 
-.welcome .btn {
-  display: inline-block;
-  padding: 1.2rem 1.4rem;
-  border: 1px solid #000000;
-  border-radius: var(--border-radius);
-  background: #e7e7e7;
+.welcome h2 {
+  margin-top: 0;
+}
+
+.welcome .welcome-content {
+  max-width: 50%;
+}
+
+.welcome .links {
   color: #000000;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: var(--content-small);
 }
 
-.welcome .btn:hover {
-  background: #333333;
-  color: #ffffff;
-  border-color: #ffffff;
+.welcome .links-container {
+  padding-top: 30px;
+  justify-content: flex-start;
 }
 
+.welcome .welcome-image {
+  max-width: 50%;
+}
 .welcome .welcome-image-wide {
   max-width: 100%;
   margin-top: 30px;
 }
 
-.welcome .welcome-content {
-  max-width: 55%;
-}
-
 .welcome .contact-form {
   margin-bottom: var(--margin-bottom);
-  width: 550px;
-  max-width: 550px;
+  width: 100%;
+}
+
+.welcome .contact-form .btn {
+  display: inline-block;
+  padding: 1.4rem 1.7rem;
+  background-color: #000000;
+  border-radius: var(--border-radius);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: var(--content-medium);
+}
+
+.welcome .contact-form .btn:hover {
+  background: #333333;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .welcome .contact-form input,
 .welcome .contact-form textarea {
   display: block;
-  width: 100%;
+  width: 50%;
   font-family: inherit;
   font-size: medium;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5rem;
   border: 1px solid #ccc;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem;
 }
 
 .welcome .contact-form textarea {
+  width: 80%;
   height: 200px;
+}
+
+.welcome .contact-form .field-error {
+  display: block;
+  color: #ff0000;
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .welcome .contact-form .contact-form-checkbox {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 1.2rem 1rem;
   margin: 1.5rem 0;
-
-  input[type="checkbox"] {
-    transform: scale(3);
-    max-width: 100px;
-  }
-
-  label {
-    font-size: var(--content-medium);
-    height: 60px;
-  }
 }
 
-.welcome .contact-form .btn {
-  width: 100%;
+.welcome .contact-form .contact-form-checkbox input[type="checkbox"] {
+  transform: scale(3, 3);
+  max-width: 100px;
 }
 
-.welcome .contact-social {
-  display: flex;
-  flex-direction: row;
-}
-
-.welcome .contact-social a {
-  color: var(--link-dark-color);
-}
-
-.welcome .contact-social a:hover {
-  color: var(--link-hover-dark-color);
+.welcome .contact-form .contact-form-checkbox label {
+  font-size: var(--content-medium);
+  height: 60px;
 }
 
 /* Section: Upcoming Shows */
@@ -244,8 +238,7 @@ img {
 
 .shows .shows-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 6rem;
 }
@@ -253,6 +246,12 @@ img {
 .shows .shows-content {
   max-width: 50%;
 }
+
+.shows .shows-content img {
+  max-width: 100%;
+  border: 3px solid #ccc;
+}
+
 /* Section: Recordings */
 .recordings {
   background-color: black;
@@ -309,12 +308,7 @@ img {
 
 .past-shows .past-shows-grid img {
   width: 100%;
-  transition: transform 0.4s;
   border: 2px solid #fff;
-}
-
-.past-shows .past-shows-grid img:hover {
-  transform: scale(1.1);
 }
 
 .past-shows .past-shows-item p {
@@ -322,11 +316,42 @@ img {
   margin-top: 10px;
 }
 
+/* Listen */
+.listen {
+  background-color: white;
+  color: black;
+}
+
+.listen .listen-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.listen h1 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.listen p {
+  margin: 0 0 var(--margin-bottom);
+}
+
+.listen .music-services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.listen .music-services-container img {
+  display: inline-block;
+  max-width: 50%;
+  border: 1px solid #000;
+  border-radius: 0;
+  margin-right: 10px;
+}
+
 /* Footer */
 .footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background: #000;
   color: #fff;
 }
@@ -334,23 +359,201 @@ img {
 .footer .footer-content {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem 0 4rem;
 }
 
-.footer .footer-content a {
-  display: inline-block;
-  font-size: var(--content-medium);
-  margin-right: 1rem;
-  margin-bottom: var(--margin-bottom);
-  color: var(--link-light-color);
-}
-
-.footer .footer-content a:hover {
-  color: var(--link-light-hover-color);
+.footer .footer-content .links-container {
+  justify-content: center;
 }
 
 .footer .footer-content p {
   text-align: center;
 }
 
-/* Ad: Landing Page */
+.footer .copyright {
+  font-size: var(--content-small);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  html,
+  body {
+    background: none;
+  }
+
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("../images/parker-galactic-pacific-wonderland-ep-album-cover.png")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  h2,
+  h3 {
+    font-size: var(--content-small);
+    margin-bottom: var(--margin-bottom-small);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-small);
+  }
+
+  p {
+    font-size: var(--content-small);
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .btn {
+    padding: 0;
+    border-radius: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .container {
+    border-radius: var(--border-radius-small);
+    padding: 1rem;
+  }
+
+  .links-container {
+    gap: 1rem;
+    margin-bottom: var(--margin-bottom-small);
+  }
+
+  .links {
+    padding: 1.2rem;
+    margin-right: 0;
+  }
+
+  .welcome .welcome-flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .welcome .btn {
+    padding: 1rem;
+    background: none;
+    border-radius: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: var(--content-small);
+  }
+
+  .welcome .btn:hover {
+    background: none;
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .welcome .welcome-content {
+    max-width: 100%;
+  }
+
+  .welcome .welcome-image {
+    display: none;
+  }
+
+  .shows .shows-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .shows .shows-content {
+    max-width: 100%;
+  }
+
+  .shows .shows-content a {
+    max-width: 100%;
+  }
+
+  .recordings .recordings-flex {
+    gap: 1rem;
+  }
+
+  .past-shows .past-shows-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+
+  .past-shows .past-shows-grid img {
+    margin-top: 20px;
+    border: 0;
+    border-bottom: 3px solid #e7e7e7;
+  }
+
+  .footer .links {
+    margin-right: 1rem;
+    padding: 1rem 0.5rem;
+    max-width: 100%;
+  }
+
+  .footer .footer-content a {
+    font-size: var(--content-small);
+  }
+}
+
+@media (max-width: 750px) {
+  .btn {
+    padding: 1rem;
+    background: none;
+    border-radius: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: var(--content-small);
+  }
+
+  .btn:hover {
+    background: none;
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .links-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .welcome .welcome-image {
+    display: block;
+    max-width: 100%;
+  }
+
+  .welcome .welcome-image img {
+    max-width: 100%;
+  }
+
+  .welcome .welcome-image-wide {
+    display: none;
+  }
+
+  .welcome .links-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .welcome .contact-form .contact-form-checkbox {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  .welcome .contact-form .contact-form-checkbox label {
+    display: inline-block;
+    font-size: var(--content-medium);
+    height: 60px;
+  }
+  .welcome .contact-form .contact-form-checkbox input[type="checkbox"] {
+    transform: none;
+  }
+}

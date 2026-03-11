@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZF1N601FC5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZF1N601FC5");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -17,9 +31,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>
-      Parker Galactic - Cosmic American Folk-Rock in the Pacific Northwest
-    </title>
+    <title>Parker Galactic - Indie Folk-Rock and Americana</title>
   </head>
   <body>
     <div class="page">
@@ -31,37 +43,36 @@
         />
       </header>
       <!-- Section: Welcome -->
-      <section class="welcome container">
+      <section class="welcome container" id="welcome">
         <div class="welcome-flex">
           <div class="welcome-content">
-            <h2>Cosmic American Folk-Rock in the Pacific Northwest</h2>
+            <h2>Indie Folk-Rock and Americana</h2>
             <p>
               Parker Galactic channels the spirit of the Pacific Northwest with
               a sound that rolls like a river and peaks like golden hour over
-              the Cascades. Blending country, blues, jam, and folk-rock, their
-              music feels both earthy and cosmic — like a backwoods jam wrapped
-              in starlight. Parker Galactic tells the stories of drifters,
-              lovers, wild places, and wide open spaces.
+              the Cascades. Blending country, blues, psych, and folk-rock, their
+              original songs tell the stories of drifters, lovers, wild places,
+              and wide open spaces.
             </p>
             <p>
               Parker Galactic is: Ed Parker (guitar, vocals), Anthony Forcellini
               (guitar, lap steel, vocals), Ryan Galas (bass), Josh Manders
               (keys, vocals), and Mike Clark (drums, vocals).
             </p>
-            <p>
-              <a href="contact.html" class="btn"
-                ><i class="fa-regular fa-xl fa-envelope"></i> Get In Touch</a
+            <div class="links-container">
+              <a href="#recordings" class="links">
+                <i class="fa-solid fa-xl fa-music"></i>Recordings</a
               >
-              <a href="#recordings" class="btn">
-                <i class="fa-solid fa-xl fa-music"></i> Recordings</a
+              <a href="#shows" class="links">
+                <i class="fa-solid fa-xl fa-guitar"></i>Shows</a
               >
-              <a href="#shows" class="btn">
-                <i class="fa-solid fa-xl fa-guitar"></i> Shows</a
+              <a href="#videos" class="links">
+                <i class="fa-brands fa-xl fa-youtube"></i>Videos</a
               >
-              <a href="#videos" class="btn">
-                <i class="fa-brands fa-xl fa-youtube"></i> Videos</a
+              <a href="/contact.html" class="links"
+                ><i class="fa-regular fa-xl fa-envelope"></i>Contact Us</a
               >
-            </p>
+            </div>
           </div>
           <div class="welcome-image">
             <img
@@ -91,23 +102,20 @@
               alt="Parker Galactic poster for April 18, 2026 show at Coast Fork Brewing."
               class="show-poster"
             />
-            <h3>Saturday, April 18, 2026 at 6pm</h3>
+
             <p>
+              Saturday, April 18, 2026 at 6pm<br />
               <a href="https://www.coastforkbrewing.com/">Coast Fork Brewing</a
               ><br />
-              106 South 6th Street, Cottage Grove, OR
+              106 South 6th Street - Cottage Grove
             </p>
-            <p>
-              <span>
-                <a href="https://www.facebook.com/share/1DGN2d8NZr/" class="btn"
-                  ><i class="fa-brands fa-square-facebook fa-xl"></i> RSVP on
-                  Facebook</a
-                >
-              </span>
-              <span
-                ><a href="https://maps.app.goo.gl/RXBssFdNweHxVt8L7" class="btn"
-                  ><i class="fa-regular fa-map fa-xl"></i> Map to Venue</a
-                ></span
+            <p class="links-container">
+              <a href="https://www.facebook.com/share/1DGN2d8NZr/" class="links"
+                ><i class="fa-brands fa-square-facebook fa-xl"></i>RSVP on
+                Facebook</a
+              >
+              <a href="https://maps.app.goo.gl/RXBssFdNweHxVt8L7" class="links"
+                ><i class="fa-regular fa-map fa-xl"></i>Map to Venue</a
               >
             </p>
           </div>
@@ -118,25 +126,21 @@
               alt="Parker Galactic poster for April 18, 2026 show at Coast Fork Brewing."
               class="show-poster"
             />
-            <h3>Friday, May 15, 2026 at 7:30pm</h3>
             <p>
+              Friday, May 15, 2026 at 7:30pm<br />
               <a href="https://gratitudebrewing.com/">Gratitude Brewing</a
               ><br />
-              540 E. 8th Ave, Eugene, OR
+              540 E. 8th Ave - Eugene
             </p>
-            <p>
-              <span>
-                <a
-                  href="https://www.facebook.com/events/1392293418908489"
-                  class="btn"
-                  ><i class="fa-brands fa-square-facebook fa-xl"></i> RSVP on
-                  Facebook</a
-                >
-              </span>
-              <span
-                ><a href="https://maps.app.goo.gl/k2533kEhxFm6g9kw7" class="btn"
-                  ><i class="fa-regular fa-map fa-xl"></i> Map to Venue</a
-                ></span
+            <p class="links-container">
+              <a
+                href="https://www.facebook.com/events/1392293418908489"
+                class="links"
+                ><i class="fa-brands fa-square-facebook fa-xl"></i>RSVP on
+                Facebook</a
+              >
+              <a href="https://maps.app.goo.gl/k2533kEhxFm6g9kw7" class="links"
+                ><i class="fa-regular fa-map fa-xl"></i>Map to Venue</a
               >
             </p>
           </div>
@@ -151,7 +155,18 @@
             <h3>Bluebird Calling (Single)</h3>
             <p>
               Parker Galactic’s single “Bluebird Calling” is available on all
-              streaming platforms.
+              streaming platforms. This original bluegrass-inspired single
+              features acoustic guitar, lap steel, and mandolin. The single was
+              written, produced, and recorded by Ed Parker. The single was
+              mastered by Thaddeus Moore at
+              <a href="https://liquidmastering.com/">Liquid Mastering</a>.
+            </p>
+            <p>
+              Digital single available for
+              <a
+                href="https://parkergalactic.bandcamp.com/track/bluebird-calling"
+                >purchase on BandCamp</a
+              >.
             </p>
             <p>
               <!-- Spotify embed-->
@@ -173,39 +188,42 @@
                 loading="lazy"
               ></iframe>
             </p>
-            <p>
+            <div class="links-container">
               <a
                 class="links"
                 href="https://open.spotify.com/album/5XLPh37igAAAsCCaB82oRH?si=EYW9-ZIWTAaziCv9hLKLSw"
               >
-                <i class="fa-brands fa-spotify"></i> Spotify</a
+                <i class="fa-brands fa-spotify"></i>Spotify</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw"
-                ><i class="fa-brands fa-youtube"></i> YouTube</a
+                href="https://music.youtube.com/playlist?list=OLAK5uy_l65kq0_e75Zuz7yeLJaNolZl5oTgx7mZ4&si=zRM-bHtUTORdGg3g"
+                ><i class="fa-brands fa-youtube"></i>YouTube Music</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-apple"></i> Apple Music</a
+                href="https://music.apple.com/us/album/bluebird-calling/1756648290?i=1756648291"
+                ><i class="fa-brands fa-apple"></i>Apple Music</a
+              >
+              <a class="links" href="https://tidal.com/album/374187908"
+                ><i class="fa-brands fa-tidal"></i>Tidal</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-amazon"></i> Amazon Music</a
+                href="https://music.amazon.com/albums/B0D94NB9SF?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_PPPpHUjtsPaZc3vIhxauMD8Ly"
+                ><i class="fa-brands fa-amazon"></i>Amazon Music</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-soundcloud"></i> SoundCloud</a
+                href="https://link.deezer.com/s/32BOFGdDKgQHmD3kZmVXO"
+                ><i class="fa-brands fa-deezer"></i>Deezer</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-bandcamp"></i> BandCamp</a
+                href="https://parkergalactic.bandcamp.com/track/bluebird-calling"
+                ><i class="fa-brands fa-bandcamp"></i>BandCamp</a
               >
-            </p>
+            </div>
           </div>
           <!-- Pacific Wonderland EP -->
           <div class="recordings-item-content">
@@ -220,6 +238,15 @@
               by Ed Parker. Josh Manders is featured on piano on the "Rusty
               Shovel" track. The album was mastered by Thaddeus Moore at
               <a href="https://liquidmastering.com/">Liquid Mastering</a>.
+            </p>
+            <h4>Digital Tracks and CDs Available</h4>
+            <p>
+              Digital tracks and a limited number of professionally made CDs are
+              available for
+              <a
+                href="https://parkergalactic.bandcamp.com/album/pacific-wonderland"
+                >purchase on BandCamp</a
+              >.
             </p>
             <p>
               <!-- Spotify embed-->
@@ -241,7 +268,7 @@
                 loading="lazy"
               ></iframe>
             </p>
-            <p>
+            <div class="links-container">
               <a
                 class="links"
                 href="https://open.spotify.com/album/2qgx0sJh8R9QVLfp1jCFgH?si=eiSVgzCrSB6TSnNTH7heEg"
@@ -250,30 +277,34 @@
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=tPFPSAPSSdw&list=OLAK5uy_mlWDLjOl-epFJhmElB93RN7d8TkipjCFY"
-                ><i class="fa-brands fa-youtube"></i> YouTube</a
+                href="https://music.youtube.com/playlist?list=OLAK5uy_lMsvps9rT7fAHkwDnKprbJhzsDgrsW5Z4&si=hdVXxY91Q2t6Sq5G"
+                ><i class="fa-brands fa-youtube"></i>YouTube Music</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-apple"></i> Apple Music</a
+                href="https://music.apple.com/us/album/pacific-wonderland-ep/1678940653"
+                ><i class="fa-brands fa-apple"></i>Apple Music</a
+              >
+              <a class="links" href="https://tidal.com/album/284703645"
+                ><i class="fa-brands fa-tidal"></i>Tidal</a
+              >
+
+              <a
+                class="links"
+                href="https://music.amazon.com/albums/B0BZHJKN9X?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kUFebmLhcBlCTenYRXkCKbPP4"
+                ><i class="fa-brands fa-amazon"></i>Amazon Music</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-amazon"></i> Amazon Music</a
+                href="https://link.deezer.com/s/32BOFgoqSUo3D4Ny7Ss0T"
+                ><i class="fa-brands fa-deezer"></i>Deezer</a
               >
               <a
                 class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-soundcloud"></i> SoundCloud</a
+                href="https://parkergalactic.bandcamp.com/album/pacific-wonderland"
+                ><i class="fa-brands fa-bandcamp"></i>BandCamp</a
               >
-              <a
-                class="links"
-                href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-                ><i class="fa-brands fa-bandcamp"></i> BandCamp</a
-              >
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -343,7 +374,7 @@
       </section>
       <!-- Past Shows -->
       <section class="past-shows container" id="past-shows">
-        <h3>Past Shows</h3>
+        <h2>Past Shows</h2>
         <div class="past-shows-grid">
           <!-- Claim 52 - Jan 3, 2026-->
           <div class="past-shows-item">
@@ -428,42 +459,40 @@
           </div>
         </div>
       </section>
+      <!-- Footer -->
+      <footer class="footer container">
+        <div class="footer-content">
+          <div class="links-container">
+            <a href="/#welcome" class="links">
+              <i class="fa-solid fa-xl fa-home"></i>Welcome</a
+            >
+            <a href="/#recordings" class="links">
+              <i class="fa-solid fa-xl fa-music"></i>Recordings</a
+            >
+            <a href="/#shows" class="links">
+              <i class="fa-solid fa-xl fa-guitar"></i>Shows</a
+            >
+            <a href="/#videos" class="links">
+              <i class="fa-brands fa-xl fa-youtube"></i>Videos</a
+            >
+            <a class="links" href="https://facebook.com/parkergalacticmusic"
+              ><i class="fa-brands fa-xl fa-facebook"></i>Facebook</a
+            >
+            <a class="links" href="https://instagram.com/parkergalactic"
+              ><i class="fa-brands fa-xl fa-instagram"></i>Instagram</a
+            >
+            <a href="https://parkergalactic.bandcamp.com" class="links"
+              ><i class="fa-brands fa-xl fa-bandcamp"></i>BandCamp</a
+            >
+            <a href="/contact.html" class="links"
+              ><i class="fa-regular fa-xl fa-envelope"></i>Contact Us</a
+            >
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; Parker Galactic LLC. Eugene, Oregon, USA
+        </div>
+      </footer>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2026 Parker Galactic. Made in Eugene, Oregon, USA</p>
-        <p>
-          <a
-            class="links"
-            href="https://open.spotify.com/artist/321HrxfNKqJhq4dWP4tch5?si=XFOZT93QQ5Ob6HkRm2Tk7Q"
-          >
-            <i class="fa-brands fa-spotify"></i> Spotify</a
-          >
-          <a class="links" href="https://www.youtube.com/@parkergalactic"
-            ><i class="fa-brands fa-youtube"></i> YouTube</a
-          >
-          <a
-            class="links"
-            href="https://music.apple.com/gb/artist/parker-galactic/1678679759"
-            ><i class="fa-brands fa-apple"></i> Apple Music</a
-          >
-          <a
-            class="links"
-            href="https://www.youtube.com/watch?v=SxX3zFtffkw&list=OLAK5uy_lNDGz5u_B1FDFMQmoVCx0ZMgsQJSf4o-Q"
-            ><i class="fa-brands fa-amazon"></i> Amazon Music</a
-          >
-          <a class="links" href="https://soundcloud.com/parkergalactic"
-            ><i class="fa-brands fa-soundcloud"></i> SoundCloud</a
-          >
-          <a class="links" href="https://parkergalactic.bandcamp.com/"
-            ><i class="fa-brands fa-bandcamp"></i> BandCamp</a
-          >
-          <a class="links" href="/contact.html" class="btn"
-            ><i class="fa-regular fa-xl fa-envelope"></i> Contact Us</a
-          >
-        </p>
-      </div>
-    </footer>
   </body>
 </html>

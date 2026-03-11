@@ -49,83 +49,16 @@
       <section class="welcome container">
         <div class="welcome-content">
           <h3>Contact Us</h3>
-          <div class="contact-form">
-            <form
-              action="send_mail.php"
-              method="post"
-              novalidate
-              id="contact-form"
+          <p>Thanks for your submission. We will be in touch soon.</p>
+          <p class="links-container">
+            <a class="links" href="https://facebook.com/parkergalacticmusic"
+              ><i class="fa-brands fa-xl fa-facebook"></i>Facebook</a
             >
-              <label for="contact_name">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                id="contact_name"
-                placeholder="Enter your name."
-                required
-              />
-              <span class="field-error" id="name-error"></span>
-              <label for="contact_email">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                id="contact_email"
-                placeholder="Enter your email address."
-                required
-              />
-              <span class="field-error" id="email-error"></span>
-              <label for="contact_message">Message</label>
-              <textarea
-                name="message"
-                id="contact_message"
-                placeholder="Enter your message here."
-                required
-              ></textarea>
-              <span class="field-error" id="message-error"></span>
-              <button type="submit" class="btn btn-light">Send Message</button>
-            </form>
-            <script>
-              document
-                .getElementById("contact-form")
-                .addEventListener("submit", function (e) {
-                  let valid = true;
-
-                  const name = document.getElementById("contact_name");
-                  const nameError = document.getElementById("name-error");
-                  if (!name.value.trim()) {
-                    nameError.textContent = "Please enter your name.";
-                    valid = false;
-                  } else {
-                    nameError.textContent = "";
-                  }
-
-                  const email = document.getElementById("contact_email");
-                  const emailError = document.getElementById("email-error");
-                  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                  if (!email.value.trim()) {
-                    emailError.textContent = "Please enter your email address.";
-                    valid = false;
-                  } else if (!emailPattern.test(email.value.trim())) {
-                    emailError.textContent =
-                      "Please enter a valid email address.";
-                    valid = false;
-                  } else {
-                    emailError.textContent = "";
-                  }
-
-                  const message = document.getElementById("contact_message");
-                  const messageError = document.getElementById("message-error");
-                  if (!message.value.trim()) {
-                    messageError.textContent = "Please enter a message.";
-                    valid = false;
-                  } else {
-                    messageError.textContent = "";
-                  }
-
-                  if (!valid) e.preventDefault();
-                });
-            </script>
-          </div>
+            <a class="links" href="https://instagram.com/parkergalactic"
+              ><i class="fa-brands fa-xl fa-instagram"></i>Instagram</a
+            >
+          </p>
+          <p><a href="/" class="links">Return to home page</a></p>
         </div>
       </section>
       <!-- Footer -->
